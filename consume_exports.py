@@ -14,23 +14,31 @@
 def get_sorted_export_files():
     """ Get list of available export files IN CORRECT ORDER, earliest first.
         Files are in the exports/ subdirectory.
-        @return list of export files (list of str).
+
+        Returns:
+            List of export files (list of str).
     """
     ...
 
 
 def get_next_export(*, last_export):
     """ Assuming we have processed `last_export`: which export is next?
-        @param last_export (str) Last processed export file, or None.
-        @return next export file (str).
+
+        Args:
+            * last_export (str) Last processed export file, or None.
+        Returns:
+            Next export file (str).
     """
     ...
 
 
 def get_export_docs(fname):
     """ Get all the docs from the linewise JSON export file.
-        @param fname (str) export file name.
-        @return all the docs, as dicts (iterable).
+
+        Args:
+            * fname (str) export file name.
+        Returns:
+            All the docs, as dicts (iterable).
     """
     ...
 
@@ -46,7 +54,8 @@ def apply_base(fname):
     """ Apply the docs from `fname` *base* file to DOCS.
         A base file contains *all* the docs there are.
 
-        @param fname (str) Filename; file contains linewise JSON objects.
+        Args:
+            * fname (str) Filename; file contains linewise JSON objects.
     """
     ...
 
@@ -55,7 +64,8 @@ def apply_delta(fname):
     """ Apply the docs from `fname` *delta* file to DOCS.
         A delta file contains only a "diff" of docs that somehow changed.
 
-        @param fname (str) Filename; file contains linewise JSON objects.
+        Args:
+            * fname (str) Filename; file contains linewise JSON objects.
     """
     ...
 
