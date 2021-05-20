@@ -1,1 +1,1 @@
-{"id": "3", "action": "delete", "data": "Doc 3, should never happen! Stand 2021-04-01 18:00:00"}
+{"id": "3", "action": "delete", "payload": "Doc 3, should never happen! Stand 2021-04-01 18:00:00"}
